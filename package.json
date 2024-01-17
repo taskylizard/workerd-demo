@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "bun run build && workerd serve config.capnp",
+    "build": "bun build --format esm --outfile dist/worker.mjs src/index.ts"
+  },
+  "dependencies": {
+    "hono": "^3.12.5",
+    "workerd": "^1.20231218.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "@types/bun": "^1.0.0",
+    "prettier": "^3.2.4"
+  }
+}
